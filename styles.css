@@ -1,37 +1,152 @@
-.cover {
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
+body {
+    background: rgb(57,60,65,255);
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-.dropdown_menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    perspective: 1000px;
-    display: none;
+h1 {
+    display: flex;
+    justify-content: center;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+    font-size: 300%;
+    line-height: 129%;
+    text-align: center;
+
+    background: linear-gradient(270deg, #CFBAFA 6%, #9060F5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-.dropdown:hover .dropdown_menu--animated {
+h2 {
+    margin: auto;
+    width: 70%;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+tr {
+    vertical-align: top;
+}
+
+li {
+    line-height: 25px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
     display: block;
+    margin: auto;
+    margin-top: 7vh;
+    margin-bottom: -30px;
+    width: 30%;
 }
 
-.dropdown 
-    for num in (1..5)
-        .dropdown_item-{num}
-            transform-origin:top center
-            animation: rotateX 300ms (num * 60ms) ease-in-out forwards
-
-@keyframes rotateX {
-    0% {
-        opacity: 0;
-        transform: rotateX(-90deg);
-    }
-    50% { 
-        transform: rotateX(-20deg);
-    }
-    100% {
-        opacity: 1;
-        transform: rotateX(0deg);
-    }
-}
+.container {
+    position: relative;
+    margin-top: 5px;
+  }
+  
+  .button {
+    color: #E3DFE9;
+    font-size: 18px;
+    background: white;
+    padding: 17px 30px;
+    box-shadow: 3px 3px 30px rgba(118, 96, 168, 0.2);
+    border-radius: 15px;
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+    margin-bottom: 15px;
+  }
+  
+  .button:hover {
+    color: #DBD7E0;
+    transform: translateY(3px);
+    box-shadow: 3px 3px 30px rgba(118, 96, 168, 0.17);
+  }
+  
+  .arrow {
+    width: 13px;
+    transition: transform 0.3s ease;
+  }
+  
+  .arrow.open {
+    transform: rotate(180deg);
+  }
+  
+  .button p {
+    display: inline;
+    margin-right: 75px;
+  }
+  
+  .dropdown {
+    position: relative;
+    color: #E3DFE9;
+    font-size: 18px;
+    background: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    display: block;
+    cursor: pointer;
+    width: 235px;
+    transform: scale(0.01);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease 0.15s;
+    transform-origin: center top;
+    overflow: hidden;
+  }
+  
+  .dropdown.open {
+    transform: scale(1);
+    opacity: 1;
+    box-shadow: 3px 3px 30px rgba(118, 96, 168, 0.15);
+  }
+  
+  .dropdown a {
+    position: relative;
+    color: #6C6185;
+    text-decoration: none;
+    display: block;
+    padding: 12.5px 30px;
+    transition: color 0.2s ease, background-color 0.2s ease, padding-left 0.2s ease;
+    overflow: hidden;
+  }
+  
+  .dropdown a.clicked {
+    padding-left: 35px;
+    color: #987CD9;
+  }
+  
+  .dropdown a:hover {
+    color: #987CD9;
+    padding-left: 35px;
+  }
+  
+  span {
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0px;
+    position: absolute;
+    background: #987CD9;
+    transition: width 0.4s ease;
+    border-radius: 1px;
+  }
+  
+  span.clicked {
+    width: 5px;
+  }
     

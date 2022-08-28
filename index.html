@@ -7,31 +7,65 @@
 
     <title>Rhyme Time</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-
-    <img class="cover" src="RhymeTime.png" alt="RhymeTime Logo">
-
-    <p class="instructions">1. Choose your submission format <br>
-                            2. Import your submission <br>
-                            3. Click submit! </p>
-
-    <li class="dropdown">Select your submission format
-        <ul class="dropdon_menu">
-            <li class="dropdown_itm-1">Text paste</li>
-            <li class="dropdown_itm-2">Link paste (YT)</li>
-            <li class="dropdown_itm-3">MP3 upload</li>
-        </ul>
-    </li>
-
     
-    <input id="lnkInpt" class="display-box" type="text">
-    <input type="file" id="myFile" name="filename">
+    
+    <div> 
+        <img class="logo" src="imgs/RhymeTimeF.png" alt="RhymeTime Logo">
 
+        <h1>It's Time to Rhyme!</h1>
+        <h2> <i>Transcribes the lyrics from any source to analyze rhyming patterns through AI! </i>
+        </h2>
+    </div>
+    
+    <div class="center">
+        <table>
 
-    <input onclick="acceptInput()" id="btn" class="buttom" value="analyze" type="button">
+            <tr height="40" colspan="3"></tr>
 
+            <tr>
+
+                <td width="300">
+                        <li>Choose your submission format</li>
+                        <li>Import your submission</li>
+                        <li>Click submit!</li>
+                    </ol>
+                </td>
+
+                <td width="5"></td>
+
+                <td>
+                    <div class="container">
+
+                        <div class="button">
+                          <p>Select format</p>
+                          <img src="https://svgshare.com/i/8u6.svg" alt="" class="arrow">
+                        </div>
+                        
+                        <div class="dropdown">
+                          <a href="text.html" id="txt">Text paste
+                            <span></span>
+                          </a>
+                          <a href="link.html" id="link">Link paste
+                            <span></span>
+                          </a>
+                          <a href="file.html" id="file">File upload
+                            <span></span>
+                          </a>
+                        </div>
+
+                    </div>
+
+                </td>
+
+            </tr>
+
+        </table>
+    </div> 
+    
 </body>
 
 </html>
