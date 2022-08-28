@@ -1,6 +1,6 @@
 # Rhyme Time
 
-<p align="center" font-size="24">An Ignition Hacks 2022 Project</p>
+<h2 align="center">An Ignition Hacks 2022 Project</h2>
 
 <p align="center">
 <img justify-content="center" alt="Ignition Hacks 2022 Logo" width="200" src="https://i.imgur.com/AdRiUtu.png"/>
