@@ -1,5 +1,5 @@
-# [<img align="center alt="RhymeTime Logo" width="60px" src="imgs/RhymeTimeF.png" />]
-[<img align="left" alt="Ignition Hacks 2022 Logo" width="30px" src="https://i.imgur.com/AdRiUtu.png" />]
+# Rhyme Time
+<img align="left" alt="Ignition Hacks 2022 Logo" width="60px" src="https://i.imgur.com/AdRiUtu.png"/>
 An Ignition Hacks 2022 Project
 
 ### Analyze rhyme patterns/schemes within texts, lyrics, songs, poems, or any audio file. 
