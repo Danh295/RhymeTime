@@ -13,8 +13,8 @@ $(document).ready(function(){
     });
   });
 
-// function acceptInput() {
-//     let displayBox = document.getElementById("lnkInpt");
-//     displayBox.value = "";
-// }
+function acceptInput() {
+    let displayBox = document.getElementById("lnkInpt");
+    displayBox.value = "";
+}
 
