@@ -7,6 +7,9 @@
 </p>
 
 <h2 align="center">Analyze rhyme patterns/schemes within texts, lyrics, songs, poems, or any audio file</h2>
-- Using Symbl.AI for speech to text recognization (not functionally implemented)
-- Highlights words with matching rhymes throughout the piece
-- Identify & analyze patterns
+
+<ul>
+  <li>Using Symbl.AI for speech to text recognization (not functionally implemented)</li>
+  <li>Highlights words with matching rhymes throughout the piece</li>
+  <li>Identify & analyze patterns</li>
+</ul>
