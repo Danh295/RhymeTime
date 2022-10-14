@@ -1,6 +1,5 @@
 # Rhyme Time
-
-<h2>Analyze rhyme patterns/schemes within texts, lyrics, songs, poems, or any audio file</h2>
+Analyze rhyme patterns/schemes within texts, lyrics, songs, poems, or any audio file</h2>
 
 <ul>
   <li>Using Symbl.AI for speech to text recognization (not functionally implemented)</li>
